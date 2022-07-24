@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%); /* hsl(216, 12%, 8%)*/
+}
+
+.box{
+    width: 50%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    
+}
+.star img{
+    background-color: hsl(216, 12%, 54%);
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.box-choice{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.box-choice .textContent{
+    margin-bottom: 20px;
+}
+.box-choice h1{
+    color: hsl(0, 0%, 100%);
+}
+.box-choice p{
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.btns button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(214, 18%, 27%);
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    transition: 300ms all;
+}
+.btns button:hover{
+    background-color: hsl(25, 97%, 53%);
+    transition: 300ms all;
+    color: hsl(0, 0%, 100%)
+}
+.submit{
+    display: grid;
+    
+}
+.submit button{
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 20px;
+    height: 40px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: 300ms all;
+    border: none;
+    font-weight: 400;
+}
+.submit button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transition: 300ms all;
+    border: none;
+}
+.btns .active{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.box-thanks{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.textContent2 h1{
+    color: hsl(0, 0%, 100%);;
+}
+.textContent2 p{
+    color: hsl(216, 12%, 54%);
+}
+.txtCongratulations{
+    background-color: hsl(214, 18%, 31%);
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 20px 0;
+    color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 425px)  {
+    .container{
+        width: 100%;
+        height: 100vh;
+    }
+    .box{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+}
+@media (max-width: 325px) {
+    .btns button {
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+    }
+}
